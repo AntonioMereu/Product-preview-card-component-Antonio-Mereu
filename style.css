@@ -2,13 +2,14 @@
   /* Primary */
   --dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
+
   /* Natural */
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
+
   /* Fonts */
   --montserrat: "Montserrat", sans-serif;
   --fraunces: "Fraunces", serif;
-
 }
 
 * {
@@ -16,63 +17,63 @@
 }
 
 body {
-    margin: 0;
-    background-color: var(--cream);
+  margin: 0;
+  background-color: var(--cream);
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 h1 {
-    font-family: var(--fraunces);
-    font-weight: 700;
-    margin-block: 22px;
-    line-height: 32px;
+  font-family: var(--fraunces);
+  font-weight: 700;
+  margin-block: 22px;
+  line-height: 32px;
 }
 
 h2 {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-family: var(--fraunces);
-    font-size: 32px;
-    color: var(--dark-cyan);
-    margin-block: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--fraunces);
+  font-size: 32px;
+  color: var(--dark-cyan);
+  margin-block: 24px;
 }
 
 span {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--dark-grayish-blue);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
 }
 
 h3 {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 6px;
-    color: var(--dark-grayish-blue);
-    margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  color: var(--dark-grayish-blue);
+  margin: 0;
 }
 
 .border-raidus {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    height: 450px;
-    background-color: white;
+  display: flex;
+  align-items: center;
+  width: min(92%, 600px);
+  height: 450px;
+  background-color: white;
 }
 
 .img-container {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .img {
@@ -85,56 +86,85 @@ h3 {
 }
 
 .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    height: 100%;
-    padding: 30px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .details p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--dark-grayish-blue);
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--dark-grayish-blue);
 }
 
 button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    height: 50px;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: var(--dark-cyan);
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var(--dark-cyan);
+  border-radius: 10px;
 }
 
 button img {
-    margin-inline-end: 10px;
+  margin-inline-end: 10px;
 }
 
 button:hover {
-    background-color: #284b3a;
-    cursor: pointer;
+  background-color: #284b3a;
+  cursor: pointer;
 }
 
 .attribution {
+  position: absolute;
+  bottom: 0;
+  padding-block-end: 10px;
+  width: 100%;
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 40em) {
+    h1,
+    h2 {
+        margin-block: 16px;
+    }
+
   .img {
     background-image: url(./images/image-product-mobile.jpg);
     background-size: cover;
     width: 100%;
+  }
+
+  .container {
+    height: 92%;
+    flex-direction: column;
+  }
+
+  .details {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .img {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
   }
 }
