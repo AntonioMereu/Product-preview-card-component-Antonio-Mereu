@@ -25,10 +25,10 @@ Users should be able to:
 ### Solution screenshots:
 
 ## Desktop
-![qr code design result desktop](./designs/desktop-design-result.png)
+![qr code design result desktop](./design/desktop-design.jpg)
 
 ## Mobile
-![qr code design result mobile](./designs/mobile-design-result.png)
+![qr code design result mobile](./design/mobile-design.jpg)
 
 ### Links
 
