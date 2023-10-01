@@ -59,7 +59,7 @@ h3 {
   margin: 0;
 }
 
-.border-raidus {
+.border-radius {
   border-radius: 10px;
 }
 
@@ -145,6 +145,7 @@ button:hover {
 
   .img {
     background-image: url(./images/image-product-mobile.jpg);
+    background-position: center;
     background-size: cover;
     width: 100%;
   }
